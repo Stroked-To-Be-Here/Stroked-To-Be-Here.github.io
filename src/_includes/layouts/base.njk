@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title | default("Stroked to Be Here - Ella Ferguson's Journey") }}</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Stroked to Be Here</h1>
+        <p class="tagline">Ella Ferguson's Journey to Recovery & Rediscovery</p>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Ella</a>
+            <a href="/blog">Updates</a>
+            <a href="/support">Support Ella</a>
+            <a href="/gallery">Gallery</a>
+            <a href="/contact">Contact</a>
+            <a href="https://instagram.com/strokedtobehere" target="_blank">Instagram</a>
+        </nav>
+    </header>
+    <main>
+        {{ content | safe }}
+    </main>
+    <footer>
+        <p>Follow Ella’s journey on <a href="https://instagram.com/strokedtobehere" target="_blank">Instagram</a></p>
+        <p>© 2024 Stroked to Be Here</p>
+    </footer>
+</body>
+</html>
