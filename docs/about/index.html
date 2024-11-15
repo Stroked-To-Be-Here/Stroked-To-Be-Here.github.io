@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Ella</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Stroked to Be Here</h1>
+        <p class="tagline">Ella Ferguson's Journey to Recovery & Rediscovery</p>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Ella</a>
+            <a href="https://instagram.com/strokedtobehere" target="_blank">Ella's Instagram</a>
+        </nav>
+    </header>
+    <main>
+        
+<section class="about-blocks">
+    <div class="block">
+      <div class="text">
+        <h2>About Ella Ferguson</h2>
+        <p><strong>Ella Ferguson</strong> is a 30-year-old Atlanta native with a
+            story of resilience, creativity, and determination. In 2021, she
+            suffered a life-altering AVM stroke, leading to a severe brain
+            hemorrhage. Thanks to emergency surgery and her indomitable spirit,
+            Ella began an inspiring journey of recovery.</p>
+      </div>
+      <div class="image">
+        <img src="/images/ella_w_guitar.jpg" alt="Ella with her guitar" />
+      </div>
+    </div>
+    <div class="block">
+      <div class="text">
+        <h3>Rediscovering Her Passions</h3>
+        <p>As she continues to recover, Ella is reconnecting with her passions for
+            art and music. Before her stroke, she was known for her creativity, both
+            as a visual artist and a musician. She plays multiple instruments,
+            including guitar, mandolin, and fiddle. While she works to regain full
+            use of her left hand, Ella has started drawing and painting again,
+            expressing her journey and resilience through her art.</p>
+      </div>
+      <div class="image">
+        <img src="/images/leonard_cohen_painting.jpg" alt="Ella drawing and painting" />
+      </div>
+    </div>
+    <div class="block">
+      <div class="image">
+        <img src="/images/ella_working.jpg" alt="Ella after her stroke working at her art desk" />
+      </div>
+      <div class="text">
+        <h3>A Path Back to Art Education</h3>
+        <p>Ella was partway through her degree in art education at Georgia State
+            University when her stroke happened. Her goal now is to complete that
+            journey and become an art teacher, inspiring others with her story and
+            her art. This pursuit is about sharing her experience, raising
+            awareness, and giving back to her community.</p>
+      </div>
+    </div>
+  </section>
+<section class="support-ella">
+    <h3>Supporting Ella’s Journey</h3>
+    <p>
+      Through <strong>Stroked to Be Here</strong>, Ella aims to raise awareness
+      about strokes, share effective treatments, and provide insights into her
+      recovery journey. Rehabilitation requires resources beyond insurance
+      coverage. Your support can help her access the advanced therapies she
+      needs.
+    </p>
+    <div class="buttons">
+        <a href="https://venmo.com/Ella-Ferguson" class="button" target="_blank">Donate via Venmo</a>
+        <a href="https://instagram.com/strokedtobehere" class="button" target="_blank">Follow on Instagram</a>
+    </div>
+</section>
+
+<script>
+  // Gradient logic for block backgrounds
+  const blocks = document.querySelectorAll('.about-blocks .block');
+  const startColor = [249, 249, 249]; // RGB for #f9f9f9
+  const endColor = [206, 217, 202]; // RGB for #CED9CA
+  const steps = blocks.length;
+
+  blocks.forEach((block, index) => {
+    const r = Math.round(startColor[0] + (endColor[0] - startColor[0]) * (index / (steps - 1)));
+    const g = Math.round(startColor[1] + (endColor[1] - startColor[1]) * (index / (steps - 1)));
+    const b = Math.round(startColor[2] + (endColor[2] - startColor[2]) * (index / (steps - 1)));
+
+    block.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+  });
+</script>
+    </main>
+    <footer>
+        <p>Follow Ella’s journey on <a href="https://instagram.com/strokedtobehere" target="_blank">Instagram</a></p>
+        <p>© 2024 Stroked to Be Here</p>
+        <p> Website designed and built by <a href="https://www.eclecticlibrary.org" target="_blank">Elli Peacock of the Eclectic Library</a></p>
+    </footer>
+</body>
+</html>
