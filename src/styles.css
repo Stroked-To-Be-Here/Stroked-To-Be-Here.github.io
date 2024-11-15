@@ -1,16 +1,18 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
+    font-family: Georgia, serif;
+    color: #27313D;
     line-height: 1.6;
-    background-color: #fafafa;
+    background-color: #bac9b4;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #ffe4e1; /* Soft pink to convey warmth and resilience */
+    background-color: #EDEBD5;
     padding: 1em;
     text-align: center;
-    border-bottom: 2px solid #ff6b6b; /* Stronger pink for contrast */
+    border-bottom: 2px solid #B09C79;
 }
 
 header h1 {
@@ -25,10 +27,13 @@ header h1 {
     margin-bottom: 10px;
 }
 
+a {
+    color: #985f6f;
+    text-decoration: none;
+}
+
 nav a {
     margin: 0 15px;
-    color: #ff6b6b;
-    text-decoration: none;
 }
 
 nav a:hover {
@@ -39,21 +44,128 @@ nav a:hover {
 .button {
     display: inline-block;
     padding: 0.5em 1em;
-    background-color: #ff6b6b;
-    color: white;
+    background-color: #a0b0ba;
+    color: #27313D;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s;
 }
 
 .button:hover {
-    background-color: #d64545;
+    background-color: #637a88;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 1em;
-    background: #ffe4e1;
-    border-top: 2px solid #ff6b6b;
+    background: #A0B0BA;
+    border-top: 2px solid #B09C79;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.hero .buttons .button {
+    padding: 0.75rem 1.5rem;
+    background-color: #985f6f;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero .buttons .button:hover {
+    background-color: #67414b;
+    color: #adadad;
+}
+
+.home .image {
+    max-width: 100%;
+}
+
+.home .image img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section Layout */
+.about-blocks {
+    padding: 8px;
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.block {
+    display: grid;
+    grid-template-areas: "words picture";
+    grid-template-columns: 1fr auto;
+    max-width: 1000px;
+    gap: 1rem;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.block .text {
+    display: grid;
+    grid-area: words;
+    justify-content: start;
+    align-content: start;
+}
+
+.block .image {
+    display: grid;
+    grid-area: picture;
+    justify-content: end;
+}
+
+.block img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Mobile-first approach */
+@media (max-width: 767px) {
+    .block {
+        grid-template-columns: 1fr;
+        grid-template-areas: "words" "picture";
+    }
+    .block .image {
+        justify-content: center;
+    }
+    .hero {
+        grid-template-columns: 1fr;
+        grid-template-areas: "words" "picture" "buttons";
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Supporting Ella Section */
+.support-ella {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.support-ella .buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.support-ella .button {
+    padding: 0.75rem 1.5rem;
+    background-color: #985f6f;
+    color: #fff;
+    font-weight: bold;
+}
+
+.support-ella .button:hover {
+    background-color: #67414b;
 }

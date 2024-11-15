@@ -1,5 +1,9 @@
 module.exports = config => {
+    // Copy CSS
     config.addPassthroughCopy("src/styles.css");
+    
+    // Copy images
+    config.addPassthroughCopy("src/images");
     return {
         markdownTemplateEngine: 'njk',
         dataTemplateEngine: 'njk',
@@ -7,7 +11,7 @@ module.exports = config => {
         dir: {
             input: 'src',
             includes: '_includes',
-            output: 'dist'
+            output: 'docs'
         }
     };
 };
