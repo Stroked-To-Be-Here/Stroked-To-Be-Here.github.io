@@ -10,7 +10,7 @@ body {
 
 header {
     background-color: #EDEBD5;
-    padding: 1em;
+    padding: 16px;
     text-align: center;
     border-bottom: 2px solid #B09C79;
 }
@@ -49,6 +49,7 @@ nav a:hover {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s;
+    padding-bottom: 4px;
 }
 
 .button:hover {
@@ -73,6 +74,7 @@ footer {
     background-color: #985f6f;
     color: #fff;
     font-weight: bold;
+    margin: 4px;
 }
 
 .hero .buttons .button:hover {
