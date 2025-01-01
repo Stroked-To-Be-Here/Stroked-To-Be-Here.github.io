@@ -6,16 +6,20 @@ body {
     background-color: #bac9b4;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-row: 2fr auto 1fr;
 }
 
 header {
     background-color: #EDEBD5;
-    padding: 16px;
+    padding: 8px;
+    margin: 0px;
     text-align: center;
     border-bottom: 2px solid #B09C79;
 }
 
 header h1 {
+    margin: 0px;
     font-size: 2.5rem;
     color: #333;
 }
@@ -27,13 +31,18 @@ header h1 {
     margin-bottom: 10px;
 }
 
+p {
+    margin: 0px;
+    padding-bottom: 8px;
+}
+
 a {
     color: #985f6f;
     text-decoration: none;
 }
 
 nav a {
-    margin: 0 15px;
+    margin: 0 4px;
 }
 
 nav a:hover {
@@ -59,9 +68,13 @@ nav a:hover {
 /* Footer */
 footer {
     text-align: center;
-    padding: 1em;
+    padding: 16px;
     background: #A0B0BA;
     border-top: 2px solid #B09C79;
+}
+
+footer .p {
+    margin-top: 4px;
 }
 
 .hero {
@@ -107,7 +120,7 @@ footer {
     max-width: 1000px;
     gap: 1rem;
     border-radius: 8px;
-    padding: 16px;
+    padding: 64px;
 }
 
 .block .text {
