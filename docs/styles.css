@@ -109,6 +109,7 @@ nav a:hover {
     text-decoration: none;
     transition: background-color 0.3s;
     padding-bottom: 4px;
+    margin: 2px;
 }
 
 .button:hover {
@@ -193,7 +194,12 @@ footer .p {
             "words"
             "links";
         grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
         text-align: center;
+    }
+    .homepage .links {
+        text-align: center;
+        align-items: center;
     }
     .homepage .image {
         justify-self: center;
