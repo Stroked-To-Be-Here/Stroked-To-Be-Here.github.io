@@ -1,9 +1,38 @@
+:root{ 
+    --brand-yellow-50: #fffaeb;
+    --brand-yellow-100: #fff1c6;
+    --brand-yellow-200: #ffda6e;
+    --brand-yellow-300: #ffcb4a;
+    --brand-yellow-400: #ffb520;
+    --brand-yellow-500: #f99207;
+    --brand-yellow-600: #dd6b02;
+    --brand-yellow-700: #b74906;
+    --brand-yellow-800: #94370c;
+    --brand-yellow-900: #7a2e0d;
+    --brand-yellow-950: #461602;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+}
+
+.rye-regular {
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 /* General Styles */
 body {
     font-family: Georgia, serif;
     color: #27313D;
     line-height: 1.6;
-    background-color: #bac9b4;
+    background-color: var(--brand-yellow-100);
     margin: 0;
     padding: 0;
     display: grid;
@@ -11,17 +40,20 @@ body {
 }
 
 header {
-    background-color: #EDEBD5;
+    background-color: var(--brand-yellow-200);
     padding: 8px;
     margin: 0px;
     text-align: center;
-    border-bottom: 2px solid #B09C79;
+    border-bottom: 2px solid var(--brand-yellow-900);
 }
 
 header h1 {
     margin: 0px;
     font-size: 2.5rem;
-    color: #333;
+    color: var(--brand-yellow-950);
+    font-family: "Rye", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .tagline {
@@ -43,6 +75,8 @@ a {
 
 nav a {
     margin: 0 4px;
+    font-variant: small-caps;
+    font-family: "Quicksand", sans-serif;
 }
 
 nav a:hover {
